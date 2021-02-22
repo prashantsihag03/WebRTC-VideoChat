@@ -1,0 +1,274 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+body {
+    max-width: 900px;
+    overflow: hidden;
+    margin: auto;
+    background-color: white;
+}
+
+header {
+    height: 5vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+}
+
+header > h1 {
+    color: steelblue;
+    font-size: 1.5em;
+    font-family: serif;
+    letter-spacing: 0.1em;
+    font-variant: small-caps;
+}
+
+header > button {
+    width: auto;
+    padding: 0.5em 1em;
+    color: white;
+    border: none;
+    border-radius: 0.5em;
+    background-color: maroon;
+}
+
+main {
+    display: block;
+    position: relative;
+    height: 95vh;
+    width: 100%;
+    background-color: white;
+    overflow: hidden;
+}
+main > section {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+#home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    top: 0%;
+    right: -100%;
+}
+
+#home > input {
+    padding: 0.5em 1em;
+    width: 10em;
+    font-size: 1em;
+    background-color: rgb(182, 211, 206);
+    border: none;
+    border-radius: 1em;
+    color: steelblue;
+    text-align: center;
+}
+
+#home > input::placeholder {
+    color: gray;
+}
+
+#home > input:focus {
+    outline: none;
+}
+
+#home > #call-update {
+    color: maroon;
+    letter-spacing: 0.1em;
+}
+
+#home > button {
+    padding: 0.5em 1em;
+    margin-top: 0.5em;
+    width: 10em;
+    font-size: 1em;
+    border: none;
+    background-color: steelblue;
+    border-radius: 1em;
+    color: white;
+}
+
+#home > button:hover {
+    cursor: pointer;
+}
+
+#caller {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    top: 0%;
+    right: -100%;
+}
+
+#caller-container {
+    display: flex;
+    flex-direction: column;
+    width: 20em;
+    height: 30em;
+    border-radius: 1em;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(182, 211, 206);
+}
+
+#image-holder {
+    width: 100%;
+    height: 60%;
+}
+
+#image-holder > img {
+    width: 100%;
+    height: 100%;
+}
+
+#callee {
+    font-size: 1.5em;
+    letter-spacing: 0.2em;
+    font-variant: small-caps;
+    text-align: center;
+}
+
+#notice {
+    color: rgb(187, 95, 85);
+    letter-spacing: 0.1em;
+    font-size: 1em;
+    text-align: center;
+}
+
+#callContainer {
+    display: block;
+    top: 0%;
+    right: -100%;
+}
+
+#videoContainer {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#peers {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: seagreen;
+    border-radius: 1em;
+    overflow: hidden;
+}
+
+#local {
+    position: absolute;
+    background-color: skyblue;
+    bottom: 1%;
+    right: 1%;
+    width: 30%;
+    height: 40%;
+    z-index: 1;
+    border-radius: 1em;
+    overflow: hidden;
+}
+
+#localVideo {
+    border: 1px solid steelblue; 
+}
+#peerVideo {
+    border: 1px solid darkgreen; 
+}
+
+video {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+#ringer-container {
+    position: absolute;
+    top: 0%;
+    left: -100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    z-index: 1000000000;
+}
+
+#ringer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: rgb(64, 125, 175);
+    width: 20em;
+    height: 10em;
+    border-radius: 1em;
+}
+
+#ringer > h1 {
+    color: white;
+    width: 100%;
+    font: 1.5em;
+    letter-spacing: 0.2em;
+    text-align: center;
+}
+
+#ringer > #ring-timer {
+    color: red;
+    font-style: italic;
+    font-size: 0.8em;
+    letter-spacing: 0.1em;
+}
+
+#ringer > #acceptBtn {
+    background-color: darkgreen;
+    color: white;
+    border: none;
+    border-radius: 1em;
+    padding: 0.5em 1em;
+    font-size: 1.5em;
+}
+
+#ringer > #rejectBtn {
+    background-color: maroon;
+    color: white;
+    border: none;
+    font-size: 1.5em;
+    border-radius: 1em;
+    padding: 0.5em 1em;
+}
+
+#ringer > button:hover {
+    cursor: pointer;
+}
+
+#ringer > #ringer-warning {
+    text-align: center;
+    width: 100%;
+    color: black;
+};
+
+#end {
+    position: absolute;
+    bottom: 2%;
+    right: 40%;
+    font-size: 2em;
+    z-index: 1000;
+}

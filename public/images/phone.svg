@@ -1,0 +1,26 @@
+<svg width="303" height="435" viewBox="0 0 303 435" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="phone" filter="url(#filter0_dd)">
+<path id="phonehandle" d="M111.118 320C107.316 320 104.001 318.084 102.277 315.277C102.2 315.17 102.162 315.059 102.076 314.953C90.885 295.092 79.117 260.37 79.117 213.334C79.117 166.294 90.876 131.576 102.076 111.719C102.161 111.608 102.2 111.501 102.277 111.395C104.001 108.575 107.32 106.668 111.118 106.668V0C52.208 0 4.45099 95.509 4.45099 213.333C4.45099 331.148 52.208 426.666 111.118 426.666V320Z" fill="#6AC259"/>
+<path id="upperMicrophone" d="M175.118 12.8C175.118 9.523 173.868 6.246 171.368 3.75C168.868 1.25 165.595 0 162.318 0H123.918V106.667H162.318C165.595 106.667 168.867 105.417 171.368 102.917C173.868 100.417 175.118 97.14 175.118 93.867V12.8Z" fill="#6AC259"/>
+<path id="lowerMicrophone" d="M175.118 332.8C175.118 329.523 173.868 326.246 171.368 323.75C168.868 321.25 165.595 320 162.318 320H123.918V426.667H162.318C165.595 426.667 168.867 425.417 171.368 422.917C173.868 420.417 175.118 417.14 175.118 413.867V332.8Z" fill="#6AC259"/>
+<path id="signal1" d="M191.118 253.338L175.118 237.334C181.527 230.925 185.059 222.401 185.059 213.334C185.059 204.267 181.526 195.743 175.118 189.325L191.118 173.325C201.802 184.013 207.685 198.217 207.685 213.334C207.685 228.442 201.802 242.65 191.118 253.338Z" fill="#6AC259"/>
+<path id="signal2" d="M223.092 285.316L207.092 269.316C222.077 254.331 230.315 234.449 230.315 213.333C230.315 192.213 222.072 172.335 207.092 157.35L223.092 141.346C242.352 160.606 252.95 186.167 252.95 213.333C252.95 240.491 242.352 266.057 223.092 285.316Z" fill="#6AC259"/>
+<path id="signal3" d="M255.084 317.308L239.084 301.299C262.619 277.764 275.585 246.524 275.585 213.333C275.585 180.142 262.619 148.894 239.084 125.359L255.084 109.355C282.903 137.169 298.216 174.093 298.216 213.334C298.22 252.565 282.902 289.498 255.084 317.308Z" fill="#6AC259"/>
+</g>
+<defs>
+<filter id="filter0_dd" x="0.450989" y="0" width="301.765" height="434.667" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+<feOffset dy="4"/>
+<feGaussianBlur stdDeviation="2"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+<feOffset dy="4"/>
+<feGaussianBlur stdDeviation="2"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+<feBlend mode="normal" in2="effect1_dropShadow" result="effect2_dropShadow"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect2_dropShadow" result="shape"/>
+</filter>
+</defs>
+</svg>

@@ -1,0 +1,23 @@
+{
+  "name": "p2p",
+  "version": "1.0.0",
+  "description": "Peer to Peer WebRTC using Socket.io for signalling and WebRTC for Communication",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "WebRTC",
+    "socket.io"
+  ],
+  "author": "Prashant Sihag",
+  "license": "ISC",
+  "dependencies": {
+    "cookie": "^0.4.1",
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "socket.io": "^3.1.0",
+    "uuid": "^8.3.2",
+    "webrtc-adapter": "^7.7.0"
+  }
+}

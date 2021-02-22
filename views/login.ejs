@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        * {
+            padding: 0%;
+            margin: 0%;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            width: 100vw;
+            background-color: white;
+        }
+
+        form {
+            width: auto;
+            height: auto;
+        }
+
+        form > input {
+            width: 20em;
+            padding: 1em;
+            border: none;
+            border-radius: 1em;
+            font-size: 1.5em;
+            letter-spacing: 0.05em;
+            background-color: steelblue;
+            color: white;
+        }
+
+        form > input:focus {
+            outline: none;
+            color: rgb(4, 83, 4);
+            background-color: rgb(136, 174, 204);
+        }
+
+        form > input::placeholder {
+            color: lightgray;
+            letter-spacing: 0em;
+        }
+
+    </style>
+</head>
+<body>
+    <form action="/dashboard" method="POST">
+        <input type="text" name="username" required placeholder="type your username and press enter."> 
+    </form>
+</body>
+</html>
