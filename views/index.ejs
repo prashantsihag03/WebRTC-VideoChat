@@ -12,9 +12,9 @@
     <!-- Header -->
     <header>
         <h1><%= username %></h1>
-        <button id="signOut" title="This will deregister this device and no calls will be received here after.">
-            Sign Out
-        </button>
+        <a href="/signout"><button id="signOut" title="This will deregister this device and no calls will be received here after.">
+             Sign Out
+        </button></a>
     </header>
 
     <!-- Main encompassing all major middle sections -->
@@ -43,10 +43,11 @@
                 <div id="local">
                     <video src="" id="localVideo" muted autoplay></video>
                 </div>
+                <div id="callBtn">
+                    <button id="end">End Call</button>
+                </div>
             </div>
-            <div id="callBtn">
-                <button id="end">End Call</button>
-            </div>
+            
         </section>
     </main>
 

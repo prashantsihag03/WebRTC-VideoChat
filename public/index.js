@@ -7,7 +7,8 @@ let activeCall = {
     state: 'empty',
     instance: null,
     peer: null,
-    roomId: null 
+    roomId: null,
+    myStream: null
 };
 
 // RTC configurations
@@ -139,6 +140,7 @@ SOCKET.on('offer', async (receivedPayload) => {
             audio: true, 
             video: true
         });
+        activeCall.myStream = stream;
 
         // display local stream
         let localVideo = document.getElementById('localVideo');
@@ -205,7 +207,7 @@ async function acceptCall(callData) {
         audio: true,
         video: true
     });
-
+    activeCall.myStream = stream;
     // display local stream
     localVideo.srcObject = stream;
 
@@ -296,7 +298,7 @@ function showCallUI(receivedPayload) {
     let i = 19;
     ringerInterval = setInterval(() => {
         i = i - 1;
-        ringerWarning.innerHTML = "Pick up in " + i;
+        ringerWarning.innerHTML = "Missing call in " + i;
         if (i == 0) {
             clearInterval(ringerInterval);
             document.getElementById("ringer-container").style.left = "-100%";
@@ -342,6 +344,10 @@ function resetCallData() {
     activeCall.instance = null;
     activeCall.peer = null;
     activeCall.roomId = null;
+    if (activeCall.myStream != null) {
+        activeCall.myStream.getTracks().forEach(track => track.stop());
+    };
     console.log("Active Call data cleared.");
+    handleView('home');
 };
 

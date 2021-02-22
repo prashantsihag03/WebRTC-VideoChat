@@ -25,4 +25,8 @@ ROUTER.post('/dashboard', (request, response) => {
     response.render('index.ejs', {username: username});
 });
 
+ROUTER.get('/signout', (request, response) => {
+    response.redirect('/');
+});
+
 module.exports = ROUTER;

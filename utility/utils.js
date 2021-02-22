@@ -21,7 +21,7 @@ function isUserOnline(usernameToCheck, onlineUsers) {
 };
 
 function getUserData(socket, onlineUsers) {
-    let user = onlineUsers.find(user => user.socket.id == socket.id);
+    let user = onlineUsers.find(user => user.socket == socket);
     if (user != undefined) {
         return user;
     };

@@ -131,7 +131,7 @@ function endCall(socket, receivedPayload) {
     // check if room exists
     if (doesRoomExist(receivedPayload.roomId)) {
         socket.to(receivedPayload.roomId).emit('rejected', JSON.stringify({message: 'Rejected'}));
-        let thisUser = UTILS.getUserData(socket);
+        let thisUser = UTILS.getUserData(socket, onlineUsers);
         if (thisUser == false) {
             console.log("endCall function line 135");
         };
