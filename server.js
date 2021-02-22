@@ -4,9 +4,9 @@ const SOCKETIO = require('socket.io');
 
 // dependencies - inbuilt
 const HTTP = require('http');
+const PORT = process.env.PORT || 3000;
 
 // module imports
-const UTILS = require('./utility/utils.js');
 const EVENTS = require('./utility/events.js');
 const MIDDLEWARES = require('./middlewares.js');
  
@@ -26,7 +26,7 @@ const SignalSocket = SOCKETIO(SERVER);
 SignalSocket.use((socket, next) => EVENTS.validateSocketConnection(socket, next));
 
 // server listening
-SERVER.listen(3000, () => console.log("Listening.........."));
+SERVER.listen(PORT, () => console.log("Listening.........."));
 
 // socket events
 SignalSocket.on('connection', socket => EVENTS.connectionEvent(socket, SignalSocket));
