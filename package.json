@@ -1,10 +1,14 @@
 {
   "name": "p2p",
   "version": "1.0.0",
+  "engines": {
+    "node": "v14.15.4"
+  },
   "description": "Peer to Peer WebRTC using Socket.io for signalling and WebRTC for Communication",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "keywords": [
     "WebRTC",
