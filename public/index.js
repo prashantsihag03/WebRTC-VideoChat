@@ -138,7 +138,7 @@ SOCKET.on('offer', async (receivedPayload) => {
         // add tracks 
         const stream = await navigator.mediaDevices.getUserMedia({
             audio: true, 
-            video: true
+            video: { width: 300, height: 500, facingMode: "user"}
         });
         activeCall.myStream = stream;
 
@@ -205,7 +205,7 @@ async function acceptCall(callData) {
     // fetch media streams here
     const stream = await navigator.mediaDevices.getUserMedia({
         audio: true,
-        video: true
+        video: { width: 300, height: 500, facingMode: "user"}
     });
     activeCall.myStream = stream;
     // display local stream
